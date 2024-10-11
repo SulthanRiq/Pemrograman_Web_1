@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Khula', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.icon-charity {
+    width: 100px;
+    height: 90px;
+    background: url('7648544_charity_donation_alms_donate_icon.png') no-repeat center;
+}
+
+.loman {
+    font-family: 'KoHo', sans-serif;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+.donasi-btn {
+    background: linear-gradient(90deg, #069AF3 0%, #03598D 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 36px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+main {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 532px;
+    background: url('Giving Tuesday.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.giving-tuesday p {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.giving-tuesday h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #069AF3;
+}
+
+.donasi-container {
+    margin-top: 20px;
+}
+
+footer {
+    background: #9B5555;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
