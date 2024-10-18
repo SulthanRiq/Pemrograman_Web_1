@@ -1,17 +1,17 @@
-let display = document.getElementById('display');
+let tampilan = document.getElementById('display');
 
-function input(value) {
-    display.value += value;
+function input(nilai) {
+    tampilan.value += nilai;
 }
 
-function clearDisplay() {
-    display.value = '';
+function clearAll() {
+    tampilan.value = '';
 }
 
-function calculate() {
+function hitung() {
     try {
-        display.value = eval(display.value);
+        tampilan.value = eval(tampilan.value);
     } catch (e) {
-        display.value = 'Error';
+        tampilan.value = 'Error';
     }
 }
