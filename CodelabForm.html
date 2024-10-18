@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Pendaftaran</title>
+        <link rel="stylesheet" href="style.css"> <!-- Tambahkan file CSS eksternal -->
+    </head>
+
+    <body>
+        <h1>Form Pendaftaran</h1>
+        <form id="registrationForm">
+            <label for="name">Nama Lengkap:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="address">Alamat Lengkap:</label><br>
+            <textarea id="address" name="address"></textarea><br><br>
+
+            <button type="button" onclick="validateForm()">Daftar</button>
+        </form>
+
+        <script>
+            function validateForm() {
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let address = document.getElementById("address").value;
+
+                if (name === "" || email === "" || address === "") {
+                    alert("Semua data harus diisi");
+                } else {
+                    alert("Pendaftaran berhasil!");
+                }
+            }
+        </script>
+    </body>
+</html>

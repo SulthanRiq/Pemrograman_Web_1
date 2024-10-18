@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Penjumlahan</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Penjumlahan</h1>
+        <h2>Bilangan pertama</h2>
+        <input type="number" id="num1">
+        <h2>Bilangan kedua</h2>
+        <input type="number" id="num2"><br><br>
+        <input type="number" id="sum" readonly="readonly">
+        <br>
+        <br>
+        <button type="button" onclick="sum()">Jumlahkan</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    <script>
+        function sum(){
+            let num1 = Number(document.querySelector("#num1").value);
+            let num2 = Number(document.querySelector("#num2").value);
+            let sum = num1 + num2;
+            document.getElementById("sum").value = sum;
+        }
+
+        function resetForm(){
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("sum").value = "";
+        }
+    </script>
+    </body>
+</html>
